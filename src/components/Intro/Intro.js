@@ -4,19 +4,23 @@ import Navigation from '../Navigation/Navigation';
 
 import './Intro.css';
 
+import logo from '../../img/doc-logo.svg';
+
 class Intro extends Component {
   render() {
     return (
       <div className="Intro">
-        <section className="hero is-bold is-success is-fullheight">
+        <section className="hero is-primary is-fullheight">
           <div className="hero-body">
-            <div className="container">
-              <p className="title is-1">
+            <div className="container has-text-centered">
+              <img width="200px" height="200px" src={logo} />
+              <p className="title is-1 animated fadeInDown">
                 Πλακιάς Γεώργιος
               </p>
-              <p className="subtitle is-3">
+              <p className="subtitle is-3 animated fadeInUp">
                 Παιδιατρικό ιατρείο
               </p>
+                        
             </div>
           </div>
         </section>
