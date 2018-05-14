@@ -11,9 +11,13 @@ class Intro extends Component {
     return (
       <div className="Intro">
         <section className="hero is-primary is-fullheight">
+          <div className="hero-head">
+            <Navigation />
+          </div>
+
           <div className="hero-body">
             <div className="container has-text-centered">
-              <img width="200px" height="200px" src={logo} />
+              <img width="200px" height="200px" src={logo} alt="logo" />
               <p className="title is-1 animated fadeInDown">
                 Πλακιάς Γεώργιος
               </p>
