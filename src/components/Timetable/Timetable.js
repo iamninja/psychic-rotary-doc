@@ -12,7 +12,7 @@ class Timetable extends Component {
         <div className="hero-body">
           <div className="container">
           <div className="columns">
-          <div className="column is-two-thirds">
+          <div className="column is-two-thirds timetable-column">
           <h2 className="title">Ωράριο ιατρείου</h2>
           <table className="table responsive-table is-centered">
             <thead>

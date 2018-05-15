@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'bulma/css/bulma.min.css';
+// import 'bulma/css/bulma.min.css';
 import 'animate.css';
 import './index.css';
 import './styles/styles.css';

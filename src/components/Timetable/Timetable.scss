@@ -1,25 +1,42 @@
 .Timetable {
-     // Bird animation
-     .bird {
-        display: flex;
-        justify-content: flex-end;
+  // Bird animation
+  .bird {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #music-note-1 {
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  #music-note-2 {
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes note-animation {
+      
+  }
+
+  table {
+    background: rgba($color: #FFFFFF, $alpha: 0.0);
+  }
+
+  @media screen and (max-width: 780px) {
+    .bird {
+      display: none;
     }
 
-    #music-note-1 {
-        animation-delay: 0s;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
+    .timetable-column {
+      background: url('../../img/doc-bird.svg');
+      background-repeat: no-repeat;
+      background-position: 90% 10px;
+      background-size: 30%;
     }
-
-    #music-note-2 {
-        animation-delay: 2s;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes note-animation {
-        
-    }
+  }
     
     @media screen and (max-width: 1290px) {
         // Make table vertical on smaller screens
