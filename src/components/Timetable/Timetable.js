@@ -5,6 +5,7 @@ import bird from '../../img/doc-bird.svg';
 import './Timetable.css';
 
 class Timetable extends Component {
+  
   render() {
     return (
       <div className="Timetable">
@@ -49,11 +50,11 @@ class Timetable extends Component {
           </table>
           </div>
           <div className="column bird">
-            <span class="icon is-large animated fadeOutUp" id="music-note-1">
-              <i class="fas fa-2x fa-music"></i>
+            <span className="icon is-large animated fadeOutUp" id="music-note-1">
+              <i className="fas fa-2x fa-music"></i>
             </span>
-            <span class="icon is-large animated fadeOutUp" id="music-note-2">
-              <i class="fas fa-2x fa-music"></i>
+            <span className="icon is-large animated fadeOutUp" id="music-note-2">
+              <i className="fas fa-2x fa-music"></i>
             </span>
             <img src={bird} alt="le bird" />
           </div>

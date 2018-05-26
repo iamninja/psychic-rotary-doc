@@ -12,7 +12,7 @@ class Intro extends Component {
       <div className="Intro">
         <section className="hero is-primary is-fullheight">
           <div className="hero-head">
-            <Navigation />
+            <Navigation ref={table => this.timetable = this.refs.table} />
           </div>
 
           <div className="hero-body">

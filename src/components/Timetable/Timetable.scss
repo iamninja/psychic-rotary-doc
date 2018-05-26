@@ -38,82 +38,91 @@
     }
   }
     
-    @media screen and (max-width: 1290px) {
-        // Make table vertical on smaller screens
-        table.responsive-table {
-            width: 100%;
-            border-collapse: collapse;
-            border-spacing: 0;
-            display: block;
-            position: relative;
-        
-            td:empty:before {
-              content: '\00a0';
-            }
-        
-            th,
-            td {
-              margin: 0;
-              vertical-align: top;
-            }
-        
-            th { text-align: left; }
-            thead {
-              display: block;
-              float: left;
-        
-              tr {
-                display: block;
-                padding: 0 10px 0 0;
-        
-                th::before {
-                  content: "\00a0";
-                }
-              }
-            }
-            tbody {
-              display: block;
-              width: auto;
-              position: relative;
-              overflow-x: auto;
-              white-space: nowrap;
-        
-              tr {
-                display: inline-block;
-                vertical-align: top;
-              }
-            }
-            th {
-              display: block;
-              text-align: right;
-              height: 2.5rem;
-            }
-            td {
-              display: block;
-              height: 2.5em;
-              text-align: center;
-              border-bottom: 1px solid black;
-            }
-            tr {
-              border-bottom: none;
-              padding: 0 10px;
-            }
-        
-            thead {
-              border: 0;
-              border-right: 1px solid black;
-            }
-
-            .second-row {
-                td {
-                    border-bottom: 1px solid black;
-                }
-            }
+  @media screen and (max-width: 1290px) {
+    // Make table vertical on smaller screens
+    table.responsive-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      display: block;
+      position: relative;
+  
+      td:empty:before {
+        content: '\00a0';
+      }
+  
+      th,
+      td {
+        margin: 0;
+        vertical-align: top;
+      }
+  
+      th { text-align: left; }
+      thead {
+        display: block;
+        float: left;
+  
+        tr {
+          display: block;
+          padding: 0 10px 0 0;
+  
+          th::before {
+            content: "\00a0";
+          }
         }
-
-        // Move musics notes on smaller screens
-        #music-note-1, #music-note-1 {
-            padding-top: 50%;
+      }
+      tbody {
+        display: block;
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        white-space: nowrap;
+  
+        tr {
+          display: inline-block;
+          vertical-align: top;
         }
+      }
+      th {
+        display: block;
+        text-align: right;
+        height: 2.5rem;
+      }
+      td {
+        display: block;
+        height: 2.5em;
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+      tr {
+        border-bottom: none;
+        padding: 0 10px;
+      }
+  
+      thead {
+        border: 0;
+        border-right: 1px solid black;
+      }
+
+      .second-row {
+        td {
+            border-bottom: 1px solid black;
+        }
+      }
     }
+
+    // Move musics notes on smaller screens
+    #music-note-1, #music-note-2 {
+        padding-top: 50%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .table th:first-letter {
+      background-color: red !important;
+    }
+    .table th {
+      display: block;
+    }
+  }
 }

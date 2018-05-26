@@ -1,0 +1,14 @@
+.Resume{
+    @media screen and (max-width: 780px) {
+        .logo {
+          display: none;
+        }
+    
+        .resume-column {
+          background: url('../../img/doc-logo.svg');
+          background-repeat: no-repeat;
+          background-position: 90% 10px;
+          background-size: 30%;
+        }
+      }
+}

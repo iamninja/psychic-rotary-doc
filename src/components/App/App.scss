@@ -1,3 +1,19 @@
 .App {
-    
+    .separator-1 {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url('../../img/doc-photo-2.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .separator-2 {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+            ), url('../../img/doc-photo-3.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 300px;
+    }
 }
