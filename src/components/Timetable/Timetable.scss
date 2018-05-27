@@ -1,4 +1,14 @@
+// Variables
+$doc-sky:   #70C5CE;
+$doc-grass: #82E38C;
+$doc-cloud: #EAFCDB;
+
+
 .Timetable {
+  .hero {
+    background: linear-gradient($doc-cloud, $doc-sky);
+  }
+
   // Bird animation
   .bird {
     display: flex;

@@ -1,4 +1,11 @@
+// Variables
+$doc-sky:   #70C5CE;
+$doc-grass: #82E38C;
+$doc-cloud: #EAFCDB;
+
 .Resume{
+  background: linear-gradient($doc-sky, $doc-grass);
+
     .tree {
       display: flex;
       justify-content: flex-end;
