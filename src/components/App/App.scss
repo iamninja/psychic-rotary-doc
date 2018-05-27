@@ -16,4 +16,16 @@
         background-size: cover;
         height: 300px;
     }
+
+    .Parallax {
+        height: 500px;
+        background-size: cover;
+
+        .parallax-background {
+           background-size: cover;
+        }
+    }
+    .custom-bg {
+        background-size: cover;
+    }
 }

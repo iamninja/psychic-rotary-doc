@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import logo from '../../img/doc-logo.svg';
+import tree from '../../img/doc-tree.svg';
 
 import './Resume.css';
 
@@ -24,8 +24,8 @@ class Resume extends Component {
                 <li>Vivamus maximus ultricies pulvinar.</li>
               </ul>
             </div>
-            <div className="column is-one-third logo">
-              <img src={logo} alt="le logo" />
+            <div className="column is-one-third tree">
+              <img src={tree} alt="le tree" />
             </div>
           </div>
           </div>
