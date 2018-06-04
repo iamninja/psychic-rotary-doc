@@ -24,11 +24,16 @@ class App extends Component {
     super(props);
 
     this.state = {
-      intervalId: 0
+      intervalId: 0,
+      isLoaded: false
     };
 
     // Bind it to make 'this' work in the callback
     this.scrollToNode = this.scrollToNode.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ isLoaded: true });
   }
 
   scrollToTop() {
@@ -51,6 +56,8 @@ class App extends Component {
     return (
       <div className="App">
         
+        <div className={ !this.state.isLoaded ? "pageloader is-active" : "pageloader"} ></div>
+
         <nav className="Navigation">
           <div className="navbar-brand">
             <a className="navbar-item" onClick={ () => this.scrollToTop() }>
@@ -58,8 +65,8 @@ class App extends Component {
             </a>
           </div>
           
-          <a class="button is-medium" onClick={ () => this.scrollToNode(this.timetable) }>Ωράριο</a>
-          <a class="button is-medium" onClick={ () => this.scrollToNode(this.resume) }>Βιογραφικό</a>
+          <a className="button is-medium" onClick={ () => this.scrollToNode(this.timetable) }>Ωράριο</a>
+          <a className="button is-medium" onClick={ () => this.scrollToNode(this.resume) }>Βιογραφικό</a>
          
         </nav>
 
