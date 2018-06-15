@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.Gallery {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $doc-grass;
+
+    .photos-column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .image {
+            cursor: pointer;
+
+            margin: 1rem;
+            width: calc(33.33333% - 2rem);
+            display: block;
+        }
+    }
+
+    .view-column {
+        img {
+            width: 100%;
+        }
+    }
+}

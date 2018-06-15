@@ -1,12 +1,25 @@
 // Variables
-$doc-sky:   #70C5CE;
-$doc-grass: #82E38C;
-$doc-cloud: #EAFCDB;
+// $doc-sky:   #70C5CE;
+// $doc-grass: #82E38C;
+// $doc-cloud: #EAFCDB;
+@import "../../styles/variables.scss";
 
 
 .Timetable {
+  background: linear-gradient($doc-cloud, $doc-sky);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .hero {
-    background: linear-gradient($doc-cloud, $doc-sky);
+    
+    height: 100vh;
+  }
+
+  .hero-body {
+    display: flex;
+    justify-content: center;
   }
 
   // Bird animation
@@ -49,6 +62,7 @@ $doc-cloud: #EAFCDB;
   }
     
   @media screen and (max-width: 1290px) {
+  
     // Make table vertical on smaller screens
     table.responsive-table {
       width: 100%;

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 
 import Intro from '../Intro/Intro';
 import Timetable from '../Timetable/Timetable';
 import Resume from '../Resume/Resume';
+import Gallery from '../Gallery/Gallery';
+
 
 import './App.css';
 
@@ -11,7 +13,7 @@ import logo from '../../img/doc-logo.svg';
 
 // import image1 from '../../img/doc-photo-1.jpg';
 // import image2 from '../../img/doc-photo-2.jpg';
-import image3 from '../../img/doc-photo-3.jpg';
+// import image3 from '../../img/doc-photo-3.jpg';
 // import logoWhite from '../../img/doc-logo-white.svg';
 
 // const image3 = "https://brightcove04pmdo-a.akamaihd.net/5104226627001/5104226627001_5297440765001_5280261645001-vs.jpg?pubId=5104226627001&videoId=5280261645001";
@@ -67,6 +69,7 @@ class App extends Component {
           
           <a className="button is-medium" onClick={ () => this.scrollToNode(this.timetable) }>Ωράριο</a>
           <a className="button is-medium" onClick={ () => this.scrollToNode(this.resume) }>Βιογραφικό</a>
+          <a className="button is-medium" onClick={ () => this.scrollToNode(this.gallery) }>Φωτογραφίες</a>
          
         </nav>
 
@@ -76,14 +79,24 @@ class App extends Component {
           <Timetable />
         </div>
 
-        <Parallax bgImage={image3} strength={500} >
+        {/* <Parallax bgImage={image3} strength={500} >
           <div className="parallax-content" style={{height: 300}}>
 
           </div>
-        </Parallax>   
+        </Parallax>    */}
 
         <div ref = {(resume) => { this.resume = resume }}>
           <Resume />
+        </div>
+
+        {/* <Parallax bgImage={image3} strength={500} >
+          <div className="parallax-content" style={{height: 300}}>
+
+          </div>
+        </Parallax>    */}
+
+        <div ref = {(gallery) => { this.gallery = gallery }}>
+          <Gallery />
         </div>
 
           

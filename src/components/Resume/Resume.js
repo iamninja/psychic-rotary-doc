@@ -8,8 +8,8 @@ class Resume extends Component {
   render() {
     return (
       <div className="Resume">
-        <section className="hero is-medium">
-          <div className="content container hero-body">
+        <section className="section">
+          <div className="content container">
           <div className="columns">
             <div className="column is-two-thirds resume-column">
               <h2>Βιογραφικό</h2>

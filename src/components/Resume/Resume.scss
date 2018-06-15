@@ -1,10 +1,12 @@
-// Variables
-$doc-sky:   #70C5CE;
-$doc-grass: #82E38C;
-$doc-cloud: #EAFCDB;
+@import "../../styles/variables.scss";
+
 
 .Resume{
   background: linear-gradient($doc-sky, $doc-grass);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
     .tree {
       display: flex;

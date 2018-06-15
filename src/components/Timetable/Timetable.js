@@ -9,8 +9,8 @@ class Timetable extends Component {
   render() {
     return (
       <div className="Timetable">
-      <section className="hero is-medium">
-        <div className="hero-body">
+      <section className="">
+        <div className="section">
           <div className="container">
           <div className="columns">
           <div className="column is-two-thirds timetable-column">

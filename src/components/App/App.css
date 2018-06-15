@@ -9,6 +9,7 @@
   border-radius: 0;
   margin: 0;
   z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
   padding: 10px; }
 
 .App .separator-1 {
